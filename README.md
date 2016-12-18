@@ -1,6 +1,6 @@
 # file_parser
 Download files from Websites.
-This is a small tool that helps you to download mediacal record files such as qrs.
+This is a small tool that helps you to download medical record files such as qrs.
 I build it to download 137 records of patients. I felt so bored to click to all those links so I build this small tool.
 
 Documentation 
