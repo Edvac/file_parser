@@ -3,14 +3,19 @@ Download files from Websites.
 This is a small tool that helps you to download mediacal record files such as qrs.
 I build it to download 137 records of patients. I felt so bored to click to all those links so I build this small tool.
 
-Documentation
-Depending on how much files and what type of files you want to downloas adjust the 'else if' number and the end_with String accordingly.
+Documentation 
 
+1.First enter your URL (with the record files)
+2.Depending on how much files and what type of files you want to download adjust the 'else if' number and the end_with String accordingly.
+3.Done!
+
+Important!!!
 Also if you are going to use it for production remove this line.
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE 
 and install the appropriate certificates to your compiler.
 
 This script was interpreted with ruby-2.2.6-p396 version.
+
 License
 
  <File_parser gives you the ability to download biological signal records>
