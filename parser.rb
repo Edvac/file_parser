@@ -10,13 +10,13 @@ OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE # Don't use it in producti
 # open the html document and target only the links, <a href="...">
 Nokogiri::HTML(open(URL)).xpath("//a/@href").each do |href|
   uri = URI.join( URL, href ).to_s # make absolute uri
-  if uri.end_with?('.qrs') then
+  if uri.end_with?('') # insert you desired file ending inside the quotes, you can use "" as well
     puts "Downloading: " + uri
     File.open(File.basename(uri),'wb'){ |f| f.write(open(uri).read) }
-  elsif uri.end_with?('.hea')
+  elsif uri.end_with?('') # insert you desired file ending inside the quotes
     puts "Downloading: " + uri
     File.open(File.basename(uri),'wb'){ |f| f.write(open(uri).read) }
-  elsif uri.end_with?('.dat')
+  elsif uri.end_with?('') # insert you desired file ending inside the quotes
     puts "Downloading: " + uri
     File.open(File.basename(uri),'wb'){ |f| f.write(open(uri).read) }
   end
